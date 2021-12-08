@@ -14,6 +14,15 @@ const tiposEnums = gql`
     CORTO
     LARGO
   }
+  enum Enum_TipoCategoria {
+    FULL_STACK
+    FRONT_END
+    BACK_END
+    METODOLOGIAS
+    MACHINE_LEARNING
+    OTROS
+  }
+
 `;
 
 export { tiposEnums };

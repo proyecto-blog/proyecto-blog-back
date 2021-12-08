@@ -17,7 +17,13 @@ const resolversUsuario = {
       ]);
       return usuarios;
     }, */
-    
+
+    Usuarios: async (parent, args) => {
+      const usuarios = await UserModel.find().populate([
+      ]);
+      return usuarios;
+    },
+
     Usuario: async (parent, args) => {
       const usuario = await UserModel.findOne({ _id: args._id });
       return usuario;
@@ -30,6 +36,7 @@ const resolversUsuario = {
         apellido: args.apellido,
         identificacion: args.identificacion,
         correo: args.correo,
+        celular: args.celular,
         rol: args.rol,
       });
 
@@ -46,6 +53,7 @@ const resolversUsuario = {
           apellido: args.apellido,
           identificacion: args.identificacion,
           correo: args.correo,
+          celular:args.celular,
           estado: args.estado,
         },
         { new: true }

@@ -23,6 +23,10 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  celular: {
+    type: String,
+    required: true,
+  },
   rol: {
     type: String,
     required: true,
