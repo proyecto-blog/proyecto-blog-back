@@ -1,3 +1,3 @@
-# Top_Secret_Rosies_Backend
+# Proyecto Blog - Backed
 
-API para un modelo de sistema de información que soporte la gestión de proyectos de investigación y mejore los procesos.
+Proyecto de elaboración de un blog
